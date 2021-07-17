@@ -1,6 +1,6 @@
 <div class="section" id="projects">
     <div class="container cc-education">
-        <div class="h4 text-center mb-4 title">Projects</div>
+        <div class="h4 text-center mb-4 title">Personal Projects</div>
 
         <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
         <div class="row">
@@ -11,10 +11,9 @@
                         <div class="card">
                             <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = 'assets/images/gif.gif'" alt="Card image" style="width:100%">
                             <div class="card-body">
-                                <h4 class="card-title">{{project.title}}</h4>
-                                <h5 class="card-text"><b>Technology :</b> {{project.tech}} </h5>
-                                <h5 class="card-text"><a href={{project.mediumlink}}>Read Blog on this  Project</a></h5>
-
+                                <h4 class="card-title">{{project.title}}</h4>                                
+                                <h5 class="card-text"><b>Technology :</b> {{project.tech}} </h5>                                
+                                <h5 class="card-text"><b>Description :</b> {{project.desc}} </h5>                                
                                 <a href={{project.livedemo}} class="btn btn-primary stretched-link ml-2 mr-5">Live Demo</a>
                                 <a href={{project.githurl}} class="btn btn-primary stretched-link">GithubLink</a>
 
